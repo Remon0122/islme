@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">islme</string>
+    <string name="quran">quran</string>
+    <string name="hadeth">hadeth</string>
+    <string name="sapha">sapha</string>
+    <string name="radio">radio</string>
+    <string name="al_fatiha">Al-Fatiha</string>
+    <string name="EnglishQuranSuras">ألفاتحه</string>
+</resources>
