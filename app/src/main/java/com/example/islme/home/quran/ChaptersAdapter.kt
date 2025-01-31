@@ -1,6 +1,7 @@
 package com.example.islme.home.quran
 
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.islme.databinding.ItemChapterBinding
@@ -11,9 +12,7 @@ class ChaptersAdapter(val chapters:List<Chapter>):RecyclerView.Adapter<ChaptersA
 
 
     class ViewHolder(val itemBinding : ItemChapterBinding)
-        : RecyclerView.ViewHolder(itemBinding.root){
-
-    }
+        : RecyclerView.ViewHolder(itemBinding.root)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val itemBinding = ItemChapterBinding.inflate(
@@ -35,5 +34,14 @@ class ChaptersAdapter(val chapters:List<Chapter>):RecyclerView.Adapter<ChaptersA
         holder.itemBinding.ArabicQuranSuras.text = Chapter.titleAr
         holder.itemBinding.numberOfVerses.text = Chapter.VersesNumber
         holder.itemBinding.ChapterIndexTv.text = "${Chapter.index+1}"
+        onItemClick?.let { onClick ->
+            holder.itemView.setOnClickListener{
+                onClick.OnItemClick(position,Chapter)
+            }
+        }
+    }
+    var onItemClick :  OnItemClick ?=null
+    fun interface OnItemClick{
+        fun OnItemClick(position:Int,chapter: Chapter)
     }
 }

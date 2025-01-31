@@ -5,9 +5,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.islme.R
 import com.example.islme.databinding.ActivityMainBinding
-import com.example.islme.databinding.QuranFragmentBinding
+import com.example.islme.home.hadeth.HadethFragment
 import com.example.islme.home.quran.QuranFragment
-import com.example.islme.home.tabs.hadethFragment
 import com.example.islme.home.tabs.radioFragment
 import com.example.islme.home.tabs.saphaFragment
 
@@ -23,7 +22,7 @@ class MainActivity : AppCompatActivity() {
                     QuranFragment()
                 }
                 R.id.navigation_hadeth ->{
-                    hadethFragment()
+                    HadethFragment()
                 }
                 R.id.navigation_sapha ->{
                     saphaFragment()
@@ -38,7 +37,6 @@ class MainActivity : AppCompatActivity() {
             showFragment(fragment)
             return@setOnItemSelectedListener true
         }
-        binding.bottomNavView.setOnItemSelectedListener()
     }
     fun showFragment(fragment : Fragment){
         supportFragmentManager
