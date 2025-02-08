@@ -3,7 +3,6 @@ package com.example.islme.home.chapterDetails
 import android.os.Build
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.viewbinding.ViewBinding
 import com.example.islme.AppConstant
 import com.example.islme.databinding.ActivityChaptersDetailsBinding
 import com.example.islme.home.model.Chapter

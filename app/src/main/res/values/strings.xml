@@ -6,4 +6,10 @@
     <string name="radio">radio</string>
     <string name="al_fatiha">Al-Fatiha</string>
     <string name="EnglishQuranSuras">ألفاتحه</string>
+    <array name="azKarList">
+        <item> سبحان الله </item>
+        <item> الحمد لله </item>
+        <item> لا الله الا الله </item>
+        <item> الله و اكبر </item>
+    </array>
 </resources>

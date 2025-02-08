@@ -7,8 +7,8 @@ import com.example.islme.R
 import com.example.islme.databinding.ActivityMainBinding
 import com.example.islme.home.hadeth.HadethFragment
 import com.example.islme.home.quran.QuranFragment
+import com.example.islme.home.sapha.SaphaFragment
 import com.example.islme.home.tabs.radioFragment
-import com.example.islme.home.tabs.saphaFragment
 
 class MainActivity : AppCompatActivity() {
     lateinit var binding : ActivityMainBinding
@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
                     HadethFragment()
                 }
                 R.id.navigation_sapha ->{
-                    saphaFragment()
+                    SaphaFragment()
                 }
                 R.id.navigation_radio ->{
                     radioFragment()
