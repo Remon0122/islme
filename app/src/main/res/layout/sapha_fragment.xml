@@ -45,6 +45,7 @@
         android:textStyle="bold"
         />
     <TextView
+        android:id="@+id/tvCounter"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -56,6 +57,7 @@
         android:textStyle="bold"
         />
     <ImageView
+        android:id="@+id/imvSaphaBody"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:src="@drawable/sabha_icon"

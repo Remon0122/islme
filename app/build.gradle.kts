@@ -49,4 +49,8 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    implementation("com.google.android.exoplayer:exoplayer:2.18.0")
+    implementation("com.squareup.retrofit2:retrofit:2.9.0") // Retrofit (if you plan to get fragments from an API)
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0") // Gson converter for Retrofit
+    implementation("com.google.android.material:material:1.4.0")
 }
