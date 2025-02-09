@@ -37,6 +37,7 @@ class MainActivity : AppCompatActivity() {
             showFragment(fragment)
             return@setOnItemSelectedListener true
         }
+        binding.bottomNavView.selectedItemId = R.id.navigation_quran
     }
     fun showFragment(fragment : Fragment){
         supportFragmentManager
